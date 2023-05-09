@@ -4,7 +4,7 @@ import { ProductInterface } from './models';
 
 @Injectable()
 export class ProductService {
-  API_URL =
+  readonly API_URL =
     'https://devsmranjan-crispy-space-capybara-5v6446xrpx62449v-3000.preview.app.github.dev';
 
   constructor(private http: HttpClient) {}
