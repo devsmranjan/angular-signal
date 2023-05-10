@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ProductInterface } from '../../models';
 
 @Component({
   selector: 'app-product-card',
@@ -8,4 +9,6 @@ import { CommonModule } from '@angular/common';
   templateUrl: './product-card.component.html',
   styleUrls: ['./product-card.component.scss'],
 })
-export class ProductCardComponent {}
+export class ProductCardComponent {
+  @Input({required: true}) product!: ProductInterface
+}
